@@ -1,0 +1,31 @@
+<nav class="navbar">
+
+  <!-- Logo -->
+  <div class="logo-section">
+    <img src="assets/images/logo/logo.png" alt="Logo">
+  </div>
+
+  <!-- Hamburger -->
+  <div class="menu-toggle" (click)="isMenuOpen = !isMenuOpen">
+    ☰
+  </div>
+
+  <!-- Navigation -->
+  <ul class="nav-links" [class.active]="isMenuOpen">
+    <li><a routerLink="/" routerLinkActive="active">Home</a></li>
+    <li><a routerLink="/about">About Us</a></li>
+    <li><a routerLink="/services">Services</a></li>
+    <li><a routerLink="/blog">Blog</a></li>
+    <li><a routerLink="/contact">Contact</a></li>
+
+    <li class="mobile-btn">
+      <button class="talk-btn">Let's Talk →</button>
+    </li>
+  </ul>
+
+  <!-- Desktop Button -->
+  <button class="talk-btn desktop-btn">
+    Let's Talk →
+  </button>
+
+</nav>

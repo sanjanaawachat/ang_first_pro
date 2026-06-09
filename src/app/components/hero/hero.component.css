@@ -1,0 +1,156 @@
+.hero-section {
+  background: url('/assets/images/bg-img.jpg') center center/cover no-repeat;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+  padding: 40px 20px;
+}
+
+app-header {
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+.welcome-badge {
+  background: #fff;
+  color: #6c4cff;
+  padding: 10px 24px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.hero-section h1 {
+  max-width: 1100px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 1.1;
+  color: #111;
+  margin-bottom: 20px;
+}
+
+.hero-section h1 span {
+  display: block;
+  color: #6c4cff;
+}
+
+.hero-section p {
+  max-width: 750px;
+  margin: 0 auto 35px;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #666;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.primary-btn {
+  background: #6c4cff;
+  color: #fff;
+  border: none;
+  padding: 16px 32px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.secondary-btn {
+  background: #fff;
+  color: #111;
+  border: 1px solid #ddd;
+  padding: 16px 32px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* =========================
+   Laptop (1200px)
+========================= */
+@media (max-width: 1200px) {
+  .hero-section h1 {
+    font-size: 68px;
+  }
+}
+
+/* =========================
+   Tablet (992px)
+========================= */
+@media (max-width: 992px) {
+  .hero-section h1 {
+    font-size: 54px;
+  }
+
+  .hero-section p {
+    font-size: 17px;
+    max-width: 600px;
+  }
+}
+
+/* =========================
+   Mobile (768px)
+========================= */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 30px 15px;
+  }
+
+  .hero-section h1 {
+    font-size: 42px;
+    line-height: 1.2;
+  }
+
+  .hero-section p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .primary-btn,
+  .secondary-btn {
+    width: 260px;
+  }
+}
+
+/* =========================
+   Small Mobile (576px)
+========================= */
+@media (max-width: 576px) {
+  .welcome-badge {
+    font-size: 12px;
+    padding: 8px 16px;
+  }
+
+  .hero-section h1 {
+    font-size: 32px;
+  }
+
+  .hero-section p {
+    font-size: 14px;
+  }
+
+  .primary-btn,
+  .secondary-btn {
+    width: 100%;
+    max-width: 280px;
+    font-size: 14px;
+    padding: 14px 20px;
+  }
+}
