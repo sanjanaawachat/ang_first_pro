@@ -1,7 +1,7 @@
 .hero-section {
   background: url('/assets/images/bg-img.jpg') center center/cover no-repeat;
   min-height: 100vh;
-
+width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
