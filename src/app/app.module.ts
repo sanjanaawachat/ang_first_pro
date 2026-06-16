@@ -8,13 +8,13 @@ import { HeroComponent } from './components/hero/hero.component';
 import { ServicesComponent } from './components/services/services.component';
 import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
-
-import { HomeComponent } from './pages/home/home.component';
 import { HeaderComponent } from './components/header/header.component';
 import { WhyChooseComponent } from './components/why-choose/why-choose.component';
 import { WorkComponent } from './components/work/work.component';
 import { TestinomialComponent } from './components/testinomial/testinomial.component';
 import { BlogComponent } from './components/blog/blog.component';
+import { RouterModule } from '@angular/router';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -25,7 +25,6 @@ import { BlogComponent } from './components/blog/blog.component';
     ServicesComponent,
     AboutComponent,
     ContactComponent,
-    HomeComponent,
     WhyChooseComponent,
     WorkComponent,
     TestinomialComponent,
@@ -33,7 +32,9 @@ import { BlogComponent } from './components/blog/blog.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule,
+    CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
