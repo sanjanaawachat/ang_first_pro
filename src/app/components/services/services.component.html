@@ -1,1 +1,41 @@
-<p>services works!</p>
+<section class="services-section">
+  <div class="container">
+
+    <span class="badge">Our Services</span>
+
+    <h2>Our Digital Services</h2>
+
+    <p class="subtitle">
+      We provide modern technology and marketing solutions that help
+      businesses improve their online presence, connect with customers,
+      and grow efficiently.
+    </p>
+
+    <div class="services-grid">
+
+      <div
+        class="service-card"
+        *ngFor="let service of services"
+        [class.dark]="service.dark">
+
+        <div class="card-content">
+
+          <div class="card-header">
+            <h3>{{ service.title }}</h3>
+            <span class="arrow">↗</span>
+          </div>
+
+          <p>{{ service.desc }}</p>
+
+        </div>
+
+        <img [src]="service.image" [alt]="service.title">
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+

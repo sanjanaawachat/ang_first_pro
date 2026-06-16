@@ -11,6 +11,10 @@ import { ContactComponent } from './components/contact/contact.component';
 
 import { HomeComponent } from './pages/home/home.component';
 import { HeaderComponent } from './components/header/header.component';
+import { WhyChooseComponent } from './components/why-choose/why-choose.component';
+import { WorkComponent } from './components/work/work.component';
+import { TestinomialComponent } from './components/testinomial/testinomial.component';
+import { BlogComponent } from './components/blog/blog.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +25,11 @@ import { HeaderComponent } from './components/header/header.component';
     ServicesComponent,
     AboutComponent,
     ContactComponent,
-    HomeComponent
+    HomeComponent,
+    WhyChooseComponent,
+    WorkComponent,
+    TestinomialComponent,
+    BlogComponent
   ],
   imports: [
     BrowserModule,

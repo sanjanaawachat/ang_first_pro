@@ -1,0 +1,173 @@
+.testimonial-section {
+  background: #e8defc;
+  padding: 80px 20px;
+  position: relative;
+  overflow: hidden;
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+.testimonial-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.testimonial-card {
+  background: #fff;
+  border: 10px solid #d8c8ff;
+  padding: 40px;
+  width: 450px;
+  min-height: 350px;
+  box-sizing: border-box;
+
+  .stars {
+    color: #f4b400;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .review-text {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #333;
+    margin-bottom: 40px;
+  }
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  .user-img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  h4 {
+    margin: 0;
+    font-size: 16px;
+  }
+
+  span {
+    color: #777;
+    font-size: 13px;
+  }
+}
+
+.content-area {
+  flex: 1;
+
+  .badge {
+    display: inline-block;
+    background: #d8c8ff;
+    color: #6b46c1;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    margin-bottom: 15px;
+  }
+
+  h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    color: #222;
+  }
+
+  .description {
+    max-width: 500px;
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 40px;
+  }
+}
+
+.stats {
+  display: flex;
+  gap: 60px;
+
+  .stat-item {
+    span {
+      display: block;
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 8px;
+    }
+
+    h3 {
+      font-size: 38px;
+      margin: 0;
+      color: #111;
+    }
+  }
+}
+
+/* Tablet */
+@media (max-width: 991px) {
+  .testimonial-wrapper {
+    gap: 40px;
+  }
+
+  .testimonial-card {
+    width: 100%;
+  }
+
+  .content-area h2 {
+    font-size: 34px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .testimonial-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .testimonial-card {
+    width: 100%;
+    padding: 25px;
+  }
+
+  .user-info {
+    justify-content: center;
+  }
+
+  .content-area {
+    h2 {
+      font-size: 30px;
+    }
+
+    .description {
+      max-width: 100%;
+    }
+  }
+
+  .stats {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .testimonial-section {
+    padding: 50px 15px;
+  }
+
+  .content-area h2 {
+    font-size: 26px;
+  }
+
+  .stats .stat-item h3 {
+    font-size: 30px;
+  }
+}

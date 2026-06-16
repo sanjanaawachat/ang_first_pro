@@ -1,0 +1,174 @@
+.why-choose {
+  background: #eee5ff;
+  padding: 100px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Top Curve */
+.why-choose::before {
+  content: "";
+  position: absolute;
+  top: -160px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 140%;
+  height: 220px;
+  background: #fff;
+  border-radius: 50%;
+}
+
+/* Bottom Curve */
+.why-choose::after {
+  content: "";
+  position: absolute;
+  bottom: -160px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 140%;
+  height: 220px;
+  background: #fff;
+  border-radius: 50%;
+}
+
+.container {
+  width: 90%;
+  max-width: 1280px;
+  margin: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;
+
+  position: relative;
+  z-index: 2;
+}
+
+.content {
+  flex: 1;
+}
+
+.badge {
+  display: inline-block;
+  background: #e4d7ff;
+  color: #6c3cf0;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.content h2 {
+  font-size: 46px;
+  color: #222;
+  margin: 18px 0;
+  line-height: 1.2;
+}
+
+.content p {
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+
+.content ul {
+  padding-left: 20px;
+}
+
+.content ul li {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.image-section {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.image-section img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 18px;
+  border: 4px solid #fff;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  position: relative;
+  z-index: 2;
+}
+
+.shape {
+  position: absolute;
+  background: #cbb4ff;
+  z-index: 1;
+}
+
+.shape.top {
+  width: 70px;
+  height: 70px;
+  top: -30px;
+  left: 20px;
+  border-radius: 0 0 20px 0;
+}
+
+.shape.bottom {
+  width: 70px;
+  height: 70px;
+  right: 10px;
+  bottom: -30px;
+  border-radius: 20px 0 0 0;
+}
+
+/* ======================
+   Tablet
+====================== */
+@media (max-width: 991px) {
+
+  .container {
+    flex-direction: column-reverse;
+    gap: 50px;
+    text-align: center;
+  }
+
+  .content h2 {
+    font-size: 36px;
+  }
+
+  .content ul {
+    text-align: left;
+    display: inline-block;
+  }
+
+  .image-section img {
+    max-width: 600px;
+  }
+}
+
+/* ======================
+   Mobile
+====================== */
+@media (max-width: 576px) {
+
+  .why-choose {
+    padding: 70px 0;
+  }
+
+  .content h2 {
+    font-size: 28px;
+  }
+
+  .content p {
+    font-size: 14px;
+  }
+
+  .image-section img {
+    max-width: 100%;
+  }
+
+  .shape.top,
+  .shape.bottom {
+    width: 50px;
+    height: 50px;
+  }
+}

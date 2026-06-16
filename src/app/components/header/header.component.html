@@ -1,30 +1,42 @@
-<nav class="navbar">
+<section class="hero-section">
 
-  <!-- Logo -->
-  <div class="logo-section">
-    <img src="assets/images/logo/logo.png" alt="Logo">
-  </div>
+  <!-- Navbar -->
+  <nav class="navbar">
 
-  <!-- Hamburger -->
-  <div class="menu-toggle" (click)="isMenuOpen = !isMenuOpen">
-    ☰
-  </div>
+    <!-- Logo -->
+    <div class="logo">
+      <img src="/assets/images/logo/logo.png" alt="Logo">
+    </div>
 
-  <!-- Navigation -->
-  <ul class="nav-links" [class.active]="isMenuOpen">
-    <li><a routerLink="/" routerLinkActive="active">Home</a></li>
-    <li><a routerLink="/about">About Us</a></li>
-    <li><a routerLink="/services">Services</a></li>
-    <li><a routerLink="/contact">Contact</a></li>
+    <!-- Hamburger Button -->
+    <button class="menu-btn" (click)="toggleMenu()">
+      ☰
+    </button>
 
-    <li class="mobile-btn">
-      <button class="talk-btn">Let's Talk →</button>
-    </li>
-  </ul>
+    <!-- Navigation Links -->
+    <ul class="nav-links" [class.active]="isMenuOpen">
+      <li><a routerLink="/">Home</a></li>
+      <li><a routerLink="/about">About Us</a></li>
+      <li><a routerLink="/services">Services</a></li>
+      <li><a routerLink="/blog">Blog</a></li>
+      <li><a routerLink="/contact">Contact</a></li>
 
-  <!-- Desktop Button -->
-  <button class="talk-btn desktop-btn">
-    Let's Talk →
-  </button>
+      <li class="mobile-btn">
+        <button class="talk-btn">
+          Let's Talk
+          <i class="fa fa-arrow-right ms-2"></i>
+        </button>
+      </li>
+    </ul>
 
-</nav>
+    <!-- Desktop Button -->
+    <button class="talk-btn desktop-btn">
+      Let's Talk
+      <i class="fa fa-arrow-right ms-2"></i>
+    </button>
+
+  </nav>
+
+
+
+</section>
