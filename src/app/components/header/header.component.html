@@ -1,36 +1,63 @@
 <section class="hero-section">
 
-  <!-- Navbar -->
   <nav class="navbar">
 
-    <!-- Logo -->
+
     <div class="logo">
-      <img src="/assets/images/logo/logo.png" alt="Logo">
+      <img src="assets/images/logo/logo.png" alt="Logo">
     </div>
 
-    <!-- Hamburger Button -->
     <button class="menu-btn" (click)="toggleMenu()">
-      ☰
+      <i class="fa fa-bars"></i>
     </button>
-<ul class="nav-links" [class.active]="isMenuOpen">
-  <li><a routerLink="/" [routerLinkActiveOptions]="{exact:true}" routerLinkActive="active">Home</a></li>
 
-  <li><a routerLink="about" routerLinkActive="active">About Us</a></li>
+    <ul class="nav-links" [class.active]="isMenuOpen">
+      <li>
+        <a routerLink="/" routerLinkActive="active"
+          [routerLinkActiveOptions]="{exact:true}">
+          Home
+        </a>
+      </li>
 
-  <li><a routerLink="/services" routerLinkActive="active">Services</a></li>
+      <li>
+        <a routerLink="/about" routerLinkActive="active">
+          About Us
+        </a>
+      </li>
 
-  <li><a routerLink="/blog" routerLinkActive="active">Blog</a></li>
+      <li>
+        <a routerLink="/services" routerLinkActive="active">
+          Services
+        </a>
+      </li>
 
-  <li><a routerLink="/contact" routerLinkActive="active">Contact</a></li>
-</ul>
+      <li>
+        <a routerLink="/blog" routerLinkActive="active">
+          Blog
+        </a>
+      </li>
+
+      <li>
+        <a routerLink="/contact" routerLinkActive="active">
+          Contact
+        </a>
+      </li>
+
+      <!-- Mobile Button -->
+      <li class="mobile-btn">
+        <button class="talk-btn">
+          Let's Talk
+          <i class="fa fa-arrow-right"></i>
+        </button>
+      </li>
+    </ul>
+
     <!-- Desktop Button -->
     <button class="talk-btn desktop-btn">
       Let's Talk
-      <i class="fa fa-arrow-right ms-2"></i>
+      <i class="fa fa-arrow-right"></i>
     </button>
 
   </nav>
-
-
 
 </section>

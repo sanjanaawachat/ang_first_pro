@@ -1,86 +1,168 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/* =========================
+   CONTACT SECTION
+========================= */
 
 .contact-section {
-  background: #f3f3f3;
-  padding: 60px 20px;
+    padding: 80px 20px;
+    background: #f8f9fc;
 }
 
 .contact-container {
     max-width: 1200px;
     margin: auto;
     display: flex;
-    gap: 40px;
-    position: relative;
     align-items: center;
     justify-content: space-between;
-margin-top: 10%;
+    gap: 40px;
 }
 
-/* Left */
+/* Left Side */
+
 .contact-info {
-  flex: 1;
+    flex: 1;
 }
 
 .contact-info h2 {
-  font-size: 2rem;
-  margin-bottom: 15px;
+    font-size: 42px;
+    margin-bottom: 15px;
+    color: #111;
 }
 
 .contact-info p {
-  color: #555;
-  margin-bottom: 25px;
-  line-height: 1.6;
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 25px;
 }
 
 .map img {
-  width: 100%;
-  border-radius: 12px;
-  display: block;
+    width: 100%;
+    max-width: 550px;
+    border-radius: 12px;
+    display: block;
 }
 
-/* Right */
+/* Right Side */
+
 .contact-form {
-  flex: 1;
-  background: #fff;
-  padding: 25px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    flex: 1;
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
 }
 
 .form-group {
-  margin-bottom: 15px;
+    margin-bottom: 18px;
 }
 
 .form-group label {
-  display: block;
-  margin-bottom: 6px;
-  font-size: 14px;
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #222;
 }
 
 .form-group input,
 .form-group textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ddd;
-  border-radius: 6px;
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    font-size: 15px;
 }
 
 .form-group textarea {
-  height: 120px;
-  resize: none;
+    height: 120px;
+    resize: none;
 }
 
-button {
-  width: 100%;
-  padding: 14px;
-  border: none;
-  border-radius: 8px;
-  background: #6a3df0;
-  color: #fff;
-  cursor: pointer;
-  font-size: 16px;
+.contact-form button {
+    width: 100%;
+    border: none;
+    background: #6a38ff;
+    color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background: #5827e6;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 992px) {
+
+    .contact-info h2 {
+        font-size: 34px;
+    }
+
+    .contact-container {
+        gap: 30px;
+    }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-info,
+    .contact-form {
+        width: 100%;
+    }
+
+    .contact-info {
+        text-align: center;
+    }
+
+    .map img {
+        max-width: 100%;
+        margin: auto;
+    }
+
+    .contact-info h2 {
+        font-size: 30px;
+    }
+}
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 576px) {
+
+    .contact-section {
+        padding: 60px 15px;
+    }
+
+    .contact-form {
+        padding: 20px;
+    }
+
+    .contact-info h2 {
+        font-size: 26px;
+    }
+
+    .contact-info p {
+        font-size: 15px;
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .contact-form button {
+        font-size: 14px;
+    }
 }
