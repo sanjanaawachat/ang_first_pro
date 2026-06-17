@@ -5,13 +5,12 @@ import { HeroComponent } from './components/hero/hero.component';
 import { ServicesComponent } from './components/services/services.component';
 import { BlogComponent } from './components/blog/blog.component';
 import { ContactComponent } from './components/contact/contact.component';
-
 const routes: Routes = [
   { path: '', component: HeroComponent },
   { path: 'about', component: AboutComponent },
   { path: 'services', component: ServicesComponent },
   { path: 'blog', component: BlogComponent },
-    { path: 'contact', component:ContactComponent },
+  { path: 'contact', component: ContactComponent }
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
