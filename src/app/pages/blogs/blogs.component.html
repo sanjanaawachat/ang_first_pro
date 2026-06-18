@@ -1,0 +1,36 @@
+<section class="blog-section">
+    <app-header></app-header>
+  <div class="container">
+
+    <h2>Blog</h2>
+   
+  </div>
+</section>
+
+<section class="latest-news">
+  <div class="container">
+
+    <h2>Latest News</h2>
+    <p class="subtitle">
+      It is a long established fact that a reader will be distracted by
+      the readable content of a page when looking at its layout.
+    </p>
+
+    <div class="news-grid">
+      <div class="news-card" *ngFor="let item of newsList">
+
+        <span class="date">Jan 15, 2025</span>
+
+        <div class="image-placeholder"></div>
+
+        <h3>{{ item.title }}</h3>
+
+        <p>{{ item.desc }}</p>
+
+        <a href="#">Read More</a>
+
+      </div>
+    </div>
+
+  </div>
+</section>

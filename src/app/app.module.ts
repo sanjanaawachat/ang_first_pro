@@ -15,6 +15,10 @@ import { TestinomialComponent } from './components/testinomial/testinomial.compo
 import { BlogComponent } from './components/blog/blog.component';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { AboutUsComponent } from './pages/about-us/about-us.component';
+import { BlogsComponent } from './pages/blogs/blogs.component';
+import { ValuesComponent } from './components/values/values.component';
+import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +32,11 @@ import { CommonModule } from '@angular/common';
     WhyChooseComponent,
     WorkComponent,
     TestinomialComponent,
-    BlogComponent
+    BlogComponent,
+    AboutUsComponent,
+    BlogsComponent,
+    ValuesComponent,
+    ContactUsComponent
   ],
   imports: [
     BrowserModule,

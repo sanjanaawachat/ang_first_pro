@@ -1,0 +1,19 @@
+.services-section {
+  width: 100%;
+  min-height: 476px;
+  position: relative;
+
+  background: url('/assets/images/bgimg.jpg') no-repeat center center;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+}
+
+/* Overlay */
+.services-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  /* background: rgba(0, 0, 0, 0.5); */
+}
