@@ -1,6 +1,5 @@
 
-
-
+<div class="container mt-5">
 <section class="services-section">
   <div class="container">
 
@@ -16,21 +15,15 @@
 
     <div class="services-grid">
 
-      <div
-        class="service-card"
-        *ngFor="let service of services"
-        [class.dark]="service.dark">
+      <div class="service-card" *ngFor="let service of services"
+           [ngClass]="{'dark-card': service.dark}">
 
-        <div class="card-content">
-
-          <div class="card-header">
-            <h3>{{ service.title }}</h3>
-            <span class="arrow">↗</span>
-          </div>
-
-          <p>{{ service.desc }}</p>
-
+        <div class="card-header">
+          <h3>{{service.title}}</h3>
+          <i class="fas fa-arrow-up-right-from-square"></i>
         </div>
+
+        <p>{{service.desc}}</p>
 
         <img [src]="service.image" [alt]="service.title">
 
@@ -39,7 +32,4 @@
     </div>
 
   </div>
-</section>
-
-<app-why-choose></app-why-choose>
-<app-testinomial></app-testinomial>
+</section></div>

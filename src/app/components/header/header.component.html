@@ -2,43 +2,52 @@
   <nav class="navbar">
 
     <div class="logo">
-      <img src="/assets/images/logo/logo.png" alt="Logo">
+      <img src="assets/images/logo/logo.png" alt="Logo">
     </div>
 
   <button class="menu-btn" (click)="toggleMenu()">
-    <i class="fa fa-bars"></i>
-  </button>
+  <i class="fa" [ngClass]="isMenuOpen ? 'fa-times' : 'fa-bars'"></i>
+</button>
 
 <ul class="nav-links" [class.active]="isMenuOpen">
 
-  <li routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }">
-    <a routerLink="/">Home</a>
+  <li>
+    <a routerLink="/" (click)="closeMenu()" style="color: #6c63ff;;">Home</a>
   </li>
 
-  <li routerLinkActive="active-link">
-    <a routerLink="/about-us">About Us</a>
+  <li>
+    <a routerLink="/about-us" (click)="closeMenu()">About Us</a>
+  </li>
+<li class="dropdown">
+  <a routerLink="/services">
+    Services <i class="fa fa-chevron-down"></i>
+  </a>
+<!-- 
+  <ul class="dropdown-menu">
+    <li><a routerLink="/web-development">Web Development</a></li>
+    <li><a routerLink="/app-development">App Development</a></li>
+    <li><a routerLink="/digital-marketing">Digital Marketing</a></li>
+    <li><a routerLink="/seo-services">SEO Services</a></li>
+  </ul> -->
+
+
+
+</li>
+
+  <li>
+    <a routerLink="/blogs" (click)="closeMenu()">Blog</a>
   </li>
 
-  <li routerLinkActive="active-link">
-    <a routerLink="/services">Services</a>
-  </li>
-
-  <li routerLinkActive="active-link">
-    <a routerLink="/blogs">Blog</a>
-  </li>
-
-  <li routerLinkActive="active-link">
-    <a routerLink="/contact-us">Contact</a>
+  <li>
+    <a routerLink="/contact-us" (click)="closeMenu()">Contact</a>
   </li>
 
 </ul>
+
     <button class="talk-btn desktop-btn">
       Let's Talk
       <i class="fa fa-arrow-right ms-2"></i>
     </button>
 
   </nav>
-
-
-
 </section>

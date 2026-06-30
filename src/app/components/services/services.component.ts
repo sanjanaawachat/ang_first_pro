@@ -16,19 +16,19 @@ services = [
   {
     title: 'App Development',
     desc: 'Android and iOS applications.',
-    image: '/assets/images/service4.png',
+    image: '/assets/images/service2.jpg',
     dark: true
   },
   {
     title: 'Digital Marketing',
     desc: 'SEO, Social Media & Ads.',
-    image: '/assets/images/f3ff9951f325a28ce8657d490ebd8505318bfc59.png',
+    image: '/assets/images/service3.png',
     dark: false
   },
   {
     title: 'Technical Support',
-    desc: 'Maintenance and IT support.',
-    image: '/assets/images/service3.png',
+    desc: 'Maintenance and troubleshooting.',
+    image: '/assets/images/service4.png',
     dark: true
   }
 ];

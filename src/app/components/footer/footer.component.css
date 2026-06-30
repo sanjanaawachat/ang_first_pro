@@ -1,3 +1,50 @@
+.social-icons {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+/* common style */
+.social-icons a {
+  width: 38px;
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+/* Facebook */
+.social-icons .facebook {
+  background: #1877F2;
+}
+
+/* Instagram */
+.social-icons .instagram {
+  background: radial-gradient(circle at 30% 107%,
+    #fdf497 0%, #fd5949 40%, #d6249f 70%, #285AEB 100%);
+}
+
+/* LinkedIn */
+.social-icons .linkedin {
+  background: #0A66C2;
+}
+
+/* X (Twitter) */
+.social-icons .twitter {
+  background: #000;
+}
+
+/* hover effect */
+/* .social-icons a:hover {
+  transform: scale(1.15);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+} */
+
 .cta-footer {
   background: #e8defd;
   padding: 100px 20px 40px;

@@ -11,37 +11,23 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(): void {
   }
+    isMenuOpen = false;
 
-   isMenuOpen = false;
+  toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen;
+  }
+
+  closeMenu() {
+    this.isMenuOpen = false;
+  }
+
+  
   isDropdownOpen = false;
   activeSection = 'hero';
 
-  toggleMenu(): void {
-    this.isMenuOpen = !this.isMenuOpen;
-    if (!this.isMenuOpen) this.isDropdownOpen = false;
-  }
-
-  toggleDropdown(): void {
-    this.isDropdownOpen = !this.isDropdownOpen;
-  }
-
-  scrollToSection(section: string): void {
-    this.activeSection = section;
-    this.isMenuOpen = false;
-    this.isDropdownOpen = false;
-
-    const el = document.getElementById(section);
-    if (el) {
-      el.scrollIntoView({ behavior: 'smooth' });
-    }
-  }
 
 
-  @HostListener('window:resize', ['$event'])
-  onResize(event: any): void {
-    if (event.target.innerWidth > 768) {
-      this.isMenuOpen = false;
-      this.isDropdownOpen = false;
-    }
-  }
+
+
+
 }

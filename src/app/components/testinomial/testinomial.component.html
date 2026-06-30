@@ -1,56 +1,51 @@
-<section class="testimonial-section">
-  <div class="container">
-    <div class="testimonial-wrapper">
+<div class="info1">
+  <section class="testimonial-section">
+    <div class="testimonial-container">
+      <!-- tera slider code -->
 
-      <!-- Left Card -->
-      <div class="testimonial-card">
-        <div class="stars">★★★★★</div>
+      <div class="testimonial-slider">
+        <div class="slider-box">
+          <div class="testimonial-content">
+            <div class="stars">★★★★★</div>
 
-        <p class="review-text">
-          The team delivered our website exactly as we envisioned.
-          Their professionalism, communication, and attention to detail
-          made the entire process smooth and stress-free.
-        </p>
+            <p>
+              {{ testimonials[currentIndex].text }}
+            </p>
 
-        <div class="user-info">
-          <img
-            src="/assets/images/3925e342ef990c1174411f2d43d1f6668cbd0d9b.jpg"
-            alt="Client"
-            class="user-img"
-          />
+            <div class="client-info">
+              <img [src]="testimonials[currentIndex].image" />
 
-          <div>
-            <h4>Rahul Sharma</h4>
-            <span>Business Owner</span>
+              <div>
+                <h4>{{ testimonials[currentIndex].name }}</h4>
+                <span>{{ testimonials[currentIndex].role }}</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-
-      <!-- Right Content -->
-      <div class="content-area">
-        <span class="badge">Testimonials</span>
-
-        <h2>What Our Clients Say</h2>
-
-        <p class="description">
-          We take pride in delivering solutions that help businesses grow,
-          improve efficiency, and achieve their goals. Here's what our
-          clients have to say about working with us.
-        </p>
-
-        <div class="stats">
-          <div class="stat-item">
-            <span>Satisfaction Rate</span>
-            <h3>98.7%</h3>
-          </div>
-
-          <div class="stat-item">
-            <span>Faster Digital Growth</span>
-            <h3>65%</h3>
-          </div>
-        </div>
-      </div>
-
     </div>
-  </div>
-</section>
+
+    <div class="testimonial-text">
+      <span class="testimonial-tag">Testimonials</span>
+      <h2>What Our Clients Say</h2>
+
+      <p>
+        We take pride in delivering solutions that help businesses grow, improve
+        efficiency, and achieve their goals. Here’s what our clients have to say
+        about working with us.
+      </p>
+
+      <div class="stats">
+        <div class="stat-item">
+          <span>Satisfaction Rate</span>
+          <h3>98.7%</h3>
+        </div>
+
+        <div class="stat-item">
+          <span>Faster Digital</span>
+          <h3>65%</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
